@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">SMOOTH</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#explore">Explore</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="jumbotron jumbotron-fluid height100p banner" id="home">
+      <div class="container h100">
+        <div class="contentBox h100">
+          <div>
+            <h1>smooth scroll</h1>
+            <p>
+              This Pen has a transparent navigation on the landing screen, then converts to solid black as you scroll down. Click the links  to see the smooth scrolling action. The hero landing image gently fades into the following section. 
+            </p>
+            <a href="https://twitter.com/kniwstudios" target="_blank" class="btn btnD1">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="sec1" id="explore">
+      <div class="container">
+        <div class="row">
+          <div class="offset-sm-2 col-sm-8">
+            <div class="headerText text-center">
+              <h2>Explore The Galaxy</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Laboriosam iusto sequi dignissimos odit aut deserunt minus fuga
+                ad repellat fugiat magnam blanditiis voluptatibus voluptas
+                officiis, dolorum asperiores non commodi, alias reiciendis!
+                Obcaecati optio eveniet velit qui doloremque fugiat aspernatur
+                magni!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="placeBox">
+              <div class="imgBox">
+                <img
+                  src="https://images.pexels.com/photos/2406397/pexels-photo-2406397.jpeg?cs=srgb&dl=astrology-astronomy-body-of-water-2406397.jpg&fm=jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h3>Mountain Sky</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="placeBox">
+              <div class="imgBox">
+                <img
+                  src="https://images.pexels.com/photos/1487009/pexels-photo-1487009.jpeg?cs=srgb&dl=4k-wallpaper-astrology-astronomy-1487009.jpg&fm=jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h3>Orions Belt</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="placeBox">
+              <div class="imgBox">
+                <img
+                  src="https://images.pexels.com/photos/2820966/pexels-photo-2820966.jpeg?cs=srgb&dl=art-photo-astronomy-crescent-2820966.jpg&fm=jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h3>Cresent Fire</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <script
+      src="https://kit.fontawesome.com/bdd89edb33.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).scroll(function() {
+        $(".navbar").toggleClass(
+          "scrolled",
+          $(this).scrollTop() > $(".navbar").height()
+        );
+      });
+    </script>
+  </body>
+</html>
